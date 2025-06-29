@@ -130,7 +130,7 @@ export default function Home() {
         <div className="inline-flex items-center justify-center bg-primary/10 text-primary p-2 rounded-full mb-6">
            <Globe className="h-8 w-8" />
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-br from-primary to-slate-600 dark:to-slate-300 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-br from-primary to-secondary-foreground dark:from-primary dark:to-primary-foreground bg-clip-text text-transparent">
           Domain Sleuth
         </h1>
         <p className="text-muted-foreground mt-4 text-lg md:text-xl max-w-2xl mx-auto">
@@ -148,7 +148,9 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <Textarea
-              placeholder="google.com&#10;openai.com&#10;yournextbigidea.com"
+              placeholder="google.com
+openai.com
+yournextbigidea.com"
               className="min-h-[180px] text-base resize-y focus:shadow-outline"
               value={domainsInput}
               onChange={(e) => setDomainsInput(e.target.value)}
